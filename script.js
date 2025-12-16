@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginFormInner');
   const signupForm = document.getElementById('signupFormInner');
 
-  // Helper: show modal (only if modal exists)
   function showAuth(mode) {
     if (!authModal) return;
     authModal.classList.remove('hidden');
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // If modal is present: wire modal buttons normally
   if (authModal) {
     if (loginBtn) loginBtn.addEventListener('click', () => showAuth('login'));
     if (signupBtn) signupBtn.addEventListener('click', () => showAuth('signup'));
