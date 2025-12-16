@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CyberRiskSense</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="shield">🛡️</div>
+        <span class="brand">CyberRiskSense</span>
+      </div>
+      <nav class="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#quiz">Security Quiz</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <div class="actions">
+        <button id="loginBtn" class="btn-outline">Login</button>
+        <button id="signupBtn" class="btn-gradient">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="badge">Enterprise-Grade Security Assessment</div>
+          <h1><span class="accent">Protect Your Digital Assets</span> with AI-Powered Insights</h1>
+          <p class="lead">Discover vulnerabilities, assess your security posture, and receive personalized recommendations to fortify your organization's defenses.</p>
+          <div class="cta">
+            <a class="btn-gradient" href="#quiz">Start Security Assessment</a>
+            <a class="btn-outline" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/img1.jpg" alt="Cybersecurity team" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section id="why" class="why container">
+      <h2>Why Choose <span class="accent">CyberRiskSense</span></h2>
+      <p class="sub">Advanced security assessment tools designed for modern enterprises — accessible, actionable, and AI-enhanced.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Security First</h3>
+          <p>We prioritize the protection of your digital assets above all else.</p>
+        </div>
+        <div class="card">
+          <h3>Precision</h3>
+          <p>AI-driven assessments provide accurate, actionable insights.</p>
+        </div>
+        <div class="card">
+          <h3>Client-Focused</h3>
+          <p>Your success and security are at the heart of everything we do.</p>
+        </div>
+        <div class="card">
+          <h3>Excellence</h3>
+          <p>We maintain the highest standards in cybersecurity assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-left">
+          <h2>About <span class="accent">CyberRiskSense</span></h2>
+          <p>Our mission is to make enterprise-grade cybersecurity accessible to organizations of all sizes through intelligent, AI-powered risk assessment tools.</p>
+          <p>We combine advanced AI with proven security frameworks to deliver comprehensive assessments that are both thorough and easy to understand.</p>
+        </div>
+        <div class="about-right">
+          <img src="images/img2.jpg" alt="Team working" />
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values container">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card"><strong>Security First</strong><p>Protection above all else.</p></div>
+        <div class="value-card"><strong>Precision</strong><p>Accurate, actionable insights.</p></div>
+        <div class="value-card"><strong>Client-Focused</strong><p>Solutions tailored for you.</p></div>
+        <div class="value-card"><strong>Excellence</strong><p>Highest standards in assessment.</p></div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="quiz container">
+      <h2>Security Quiz — Quick Assessment</h2>
+      <p class="sub">Answer honestly. We'll provide a short security score and a result code you can use for follow-ups or to store against your account.</p>
+
+      <form id="quizForm" class="quiz-form">
+        <div class="question">
+          <label>1. Do you use multi-factor authentication (MFA) for admin accounts?</label>
+          <div class="options">
+            <label><input type="radio" name="q1" value="0" required> No</label>
+            <label><input type="radio" name="q1" value="2"> Yes (Some)</label>
+            <label><input type="radio" name="q1" value="4"> Yes (All)</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>2. How often do you apply critical security patches?</label>
+          <div class="options">
+            <label><input type="radio" name="q2" value="0" required> Rarely</label>
+            <label><input type="radio" name="q2" value="2"> Sometimes</label>
+            <label><input type="radio" name="q2" value="4"> Immediately</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>3. Do you perform external vulnerability scans?</label>
+          <div class="options">
+            <label><input type="radio" name="q3" value="0" required> No</label>
+            <label><input type="radio" name="q3" value="3"> Annually</label>
+            <label><input type="radio" name="q3" value="6"> Quarterly or more</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>4. Do employees receive regular cybersecurity training?</label>
+          <div class="options">
+            <label><input type="radio" name="q4" value="0" required> No</label>
+            <label><input type="radio" name="q4" value="2"> Once a year</label>
+            <label><input type="radio" name="q4" value="4"> Regularly</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>5. Do you maintain backups and test restore procedures?</label>
+          <div class="options">
+            <label><input type="radio" name="q5" value="0" required> No</label>
+            <label><input type="radio" name="q5" value="2"> Backups only</label>
+            <label><input type="radio" name="q5" value="4"> Backups + tested restores</label>
+          </div>
+        </div>
+
+        <div class="quiz-actions">
+          <button type="submit" class="btn-gradient">Get Security Score</button>
+        </div>
+      </form>
+
+      <div id="quizResult" class="quiz-result hidden">
+        <h3>Your Security Score: <span id="scoreValue"></span>/20</h3>
+        <p id="resultText"></p>
+        <p>Security Code: <code id="securityCode"></code></p>
+
+        <form id="saveResultForm" action="backend/submit_quiz.php" method="post" class="save-form">
+          <input type="hidden" name="score" id="scoreInput" />
+          <input type="hidden" name="code" id="codeInput" />
+          <label for="emailSave">Email to save result (optional):</label>
+          <input id="emailSave" name="email" placeholder="you@company.com" />
+          <button type="submit" class="btn-outline">Save Result</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact Us</h2>
+      <p class="sub">Send us your message — we'll get back within 1-2 business days.</p>
+    
+      <div class="contact-inner">
+        <div class="contact-img">
+          <img src="images/img3.jpg" alt="Contact illustration" />
+        </div>
+    
+        <form id="contactForm" action="backend/contact.php" method="post" class="contact-form">
+          <div class="row">
+            <input type="text" name="name" placeholder="Your Name" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+          </div>
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+          <button class="btn-gradient" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>© <span id="year"></span> CyberRiskSense</div>
+        <div class="footer-links">
+          <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- LOGIN / SIGNUP MODALS -->
+  <div id="authModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" id="closeAuth" aria-label="Close">&times;</button>
+      <div class="tabs">
+        <button id="tabLogin" class="tab active">Login</button>
+        <button id="tabSignup" class="tab">Sign Up</button>
+      </div>
+
+      <div id="loginDiv" class="auth-form">
+        <form id="loginFormInner" action="backend/login.php" method="post">
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button class="btn-gradient" type="submit">Login</button>
+        </form>
+      </div>
+
+      <div id="signupDiv" class="auth-form hidden">
+        <form id="signupFormInner" action="backend/register.php" method="post">
+          <input name="name" type="text" placeholder="Full name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="password" type="password" placeholder="Password" required />
+          <button class="btn-gradient" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
